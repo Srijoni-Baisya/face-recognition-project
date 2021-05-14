@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Recognizer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Newsreader:wght@600&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="container">
+        <center>
+        <h1 class="btn btn-default heading">IMAGE RECOGNITION APP</h1>
+        <br><br>
+        <h3>Model is trained to recognize the following family members :</h3>
+        <br>
+        <b class="name_of_members">
+            Myself
+            <hr>
+            Mother
+            <hr>
+            Father
+            <hr>
+            Maternal Grandmother
+            <hr>
+            Maternal Grandfather
+            <hr>
+            Paternal Grandfather
+            <hr>
+            Paternal Grandmother
+            <hr>
+        </b>
+        <br><br>
+        <div id="camera"></div>
+        <br><hr><br>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="take_snapshot()" class="btn btn-primary">Capture Image</button>
+        <br><br>
+        <button onclick="check()" class="btn btn-danger">Identify Image</button>
+        <br><hr><br>
+        <h3>Family Member : <span id="result_member_name"></span></h3>
+        <h3>Accuracy : <span id="result_object_accuracy"></span></h3>
+    </center>
+        <script src="main.js"></script>
+    </body>
+</html>

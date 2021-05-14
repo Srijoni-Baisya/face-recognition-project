@@ -1,0 +1,32 @@
+body{
+    background:linear-gradient(to bottom right, rgba(250,245,70,80), rgba(57,237,245,84));
+    color: black;
+    background-size: cover;
+}
+.heading{
+    width: 80%;
+    font-family: 'Girassol', cursive;
+    font-size: 40px;
+}
+#camera{
+    border: 5px dotted black;
+    /*width: 350px;
+    height: 300px;*/
+}
+#result_object_name,#result_object_accuracy{
+    color: darkblue;
+}
+.name_of_members{
+    color: rgb(70, 8, 95);
+    font-size: 20px;
+}
+h3{
+    font-family: 'Newsreader', serif;
+    color: darkblue; 
+}
+#result{
+    border: 10px ridge;
+    padding: 5px;
+    height: 330px;
+    width: 380px;
+}
